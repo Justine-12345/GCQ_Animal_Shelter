@@ -1,0 +1,5 @@
+SELECT `animal`.*, `rescuer`.`rescuer_name`, `employee`.`employee_name`, `adopter`.`adopter_name`
+     FROM `animal`
+     LEFT JOIN `rescuer` ON `animal`.`rescuer_id` = `rescuer`.`rescuer_id`
+     LEFT JOIN `employee` ON `animal`.`employee_id` = `employee`.`employee_id`
+     LEFT JOIN `adopter` ON `animal`.`adopter_id` = `adopter`.`adopter_id`;
